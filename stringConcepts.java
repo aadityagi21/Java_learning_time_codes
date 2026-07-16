@@ -39,5 +39,18 @@ class Main {
         // }
         
         // string are immutable.
+
+                String line = "Hello i am aditya tyagi";
+        char arr[] = line.toCharArray();
+        
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>='a' && arr[i]<='z'){
+                arr[i] = (char)(arr[i] - 'a' + 'A');
+                System.out.print(arr[i]);
+            }
+            else{
+                System.out.print(arr[i]);
+            }
+        }
     }
 }
